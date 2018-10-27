@@ -30,3 +30,77 @@ h2{
 	height:150px;
 	position: left;
 }
+
+/** Estilos Pagina Autores OVI	*/
+body{
+			background-image: url(../imagen.jpg);
+			background-repeat: no-repeat fixed center center;
+			background-size: cover;
+			font:400 120px/1em Amatic SC;text-align:center;padding-top:140px}
+.jiterry span{
+animation:jitter 200ms linear infinite;
+color:#3371FF;
+display:inline-block
+}
+@keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }
+
+#contenedor{
+	margin-right:auto;
+	
+   justify-content: center;
+
+}
+#divLogo{
+margin-top:-9px;
+position:absolute;
+border: 2px #FFF outset;
+border-color:#FF9333;
+height:168px;
+margin-left:60px;
+border-bottom-width:2px;
+border-bottom-color:#FF334F;
+border-radius: 10px 5px 10px 5px;
+-webkit-box-shadow: 8px 2px 5px #999;
+-moz-box-shadow: 8px 2px 5px #999;
+}
+#Participantes{
+			
+font:400 22px/1em Amatic SC;text-align:center;padding-top:140px;
+border-bottom-width:2px;
+border-bottom-color:#FF334F;
+padding: 50px;
+margin: 10px;
+width: 510px;
+height: 430px;
+border-radius: 10px 5px 10px 8px;
+-webkit-box-shadow: 15px 2px 5px #999;
+-moz-box-shadow: 10px 2px 5px #999;
+}
+img {
+  padding-right:  10px;
+  padding-bottom: 10px;
+}
+.define {
+    width:960px;
+    margin:0 auto;
+}
+footer{
+    position: relative;
+    /* Altura total del footer en px con valor negativo */
+    margin-top: -50px;
+    /* Altura del footer en px. Se han restado los 5px del margen
+       superior mas los 5px del margen inferior
+    */
+    height: 40px;
+    padding:5px 0px;
+    clear: both;
+    background: #1D277E;
+    text-align: center;
+}
+.textoFooter{
+	font:15px/2em cursive;
+	padding-top:40px;
+    text-align: center;
+
+}
+
