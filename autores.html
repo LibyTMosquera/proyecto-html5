@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Autores</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/diseno.css">
+</head>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script>
+	$(function(){
+  var $jittery = $('.jiterry'),
+      aText    = $jittery.text().split(''),
+      letters = '';
+  
+  for(var i = 0; i < aText.length; i++){
+    letters += '<span>'+aText[i]+'</span>';
+  }
+  
+  $jittery.empty().append(letters);
+  
+  $.each($('span', $jittery), function(i){
+    $(this).css('animation-delay', '-'+i+'70ms');
+  });
+});
+</script>
+<body>
+<div id="contenedor">
+<div id="divLogo">
+<title>Autores </title>
+<img src="./logoUNAD.jpg"  width="300" height="150" alt="Logo UNAD"/>
+<span class="jiterry">Autores&nbsp;del&nbsp;OVI </span>
+</div>
+</br>
+</br>
+<div id="Participantes" style="float:left;background-image: url(./fondo1.jpg);background-size: cover;">
+<img src="./FotoLibyMosquera.jpg" width="250" height="300">
+<p>Liby Tatiana Mosquera Mateus </br> Cod. 1012420078 </br> Ingenieria De Sistemas </br> Skype: liby.mosquera</p>
+
+</div>
+<div id="Participantes" style="float:left;background-image: url(./fondo2.jpg);background-size: cover;">
+<img src="./FotoJavierReyes.jpeg"  width="250" height="300">
+<p>Javier Hernando Reyes </br> Cod. 1012386876 </br> Ingenieria De Sistemas </br> Skype: https://join.skype.com/invite/FGDtZOGUwlf2</p>
+
+</div>
+
+
+</div> <!-- Div Contenedor-->
+
+<footer>
+	<p class="textoFooter">Universidad Nacional Abierta y a Distancia UNAD </br> Ingenieria de sistemas </br>Bogotá D.C </br> 2018</p>
+</footer>
+
+
+</body>
+</html>
